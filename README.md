@@ -30,13 +30,33 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+.map() returns a new array which is the same length as the original. Every item in the original array is transformed using the called procedure and past to the new array.
+
+.forEach() is similar to a loop. The called procedure is performed once for each item within the array. But a new array is not produced and therefore does not store the return value. 
+
 2. What is the difference between a function and a method?
+
+A method is a function which has a direct connection with an object. Therefore, a method is controlled within the scope. They are called similar to that of an array method.
+
+A function is global and has no association with a particular object. They are called and require an object to be passed to it with its parameters. 
 
 3. What is closure?
 
+A closure is a function. It refers to the space within the function and its surrounding scope; whether this having access to local or global variables and functions.
+
 4. Describe the four rules of the 'this' keyword.
 
+1)	This can be called within the global scope and provides us with the ‘window’ object. When this occurs we have access to all global attributes but not a specific element.
+
+2)	This is used within explicit binding, or when using .call() or .apply(). These functions call on a specific object and therefore when this is applied it is referring to the explicitly stated argument.
+
+3)	This is also used in implicit binding. When creating a constructor function we use this to suggest that the object which will be passed through later will provide the value.
+
+4)	This is used when developing a constructor. We use this to identify the individuals specific key. the this keyword is used to identify the specific object which will be created later.
+
 5. Why do we need super() in an extended class?
+
+Super() is a keyword which is used in building classes. The super() function is called to allow child objects to have access to parent constructor properties.
 
 ## Project Set up
 
